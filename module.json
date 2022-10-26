@@ -1,86 +1,102 @@
 {
-    "name": "pf2e-darth-and-drow",
-    "title": "PF2E - Darth & Drow's Brewery",
-    "description": "<p>A collection of Homebrew Classes, Feats, Mechanics and Tweaks for Pathfinder 2nd edition</p></p><p>Support us on <a href='https://www.patreon.com/user?u=70815503'>Patreon</a> or <a href='https://ko-fi.com/helpfuldrow'>Kofi</a>.<p>",
-    "author": "Vyklade",
-    "version": "0.1.6",
-    "compatibleCoreVersion": "9",
-    "minimumCoreVersion": "9",
-    "minimumSystemVersion": "3.7.2",
-    "type": "module",
-    "systems": ["pf2e"],
-    "packs": [
-        {
-            "name": "harrower-actions-and-spells",
-            "label": "Harrower Actions and Spells",
-            "system": "pf2e",
-            "path": "packs/harrower-actions-and-spells.db",
-            "entity": "Item",
-            "module": "pf2e-darth-and-drow"
+  "title": "PF2E - Darth & Drow's Brewery",
+  "description": "<p>A collection of Homebrew Classes, Feats, Mechanics and Tweaks for Pathfinder 2nd edition</p><p></p><p>Support us on <a href=\"https://www.patreon.com/user?u=70815503\">Patreon</a> or <a href=\"https://ko-fi.com/helpfuldrow\">Kofi</a>.</p><p></p>",
+  "version": "0.2.0",
+  "packs": [
+    {
+      "name": "harrower-actions-and-spells",
+      "label": "Harrower Actions and Spells",
+      "system": "pf2e",
+      "path": "packs/harrower-actions-and-spells.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "harrower-class-and-features",
+      "label": "Harrower Class and Features",
+      "system": "pf2e",
+      "path": "packs/harrower-class-and-features.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "harrower-macros",
+      "label": "Harrower Macros",
+      "system": "pf2e",
+      "path": "packs/harrower-macros.db",
+      "type": "Macro",
+      "private": false,
+      "flags": {}
+    }
+  ],
+  "flags": {
+    "pf2e-darth-and-drow": {
+      "pf2e-homebrew": {
+        "featTraits": {
+          "harrower": {
+            "label": "Harrower",
+            "description": "<p>This feat, spell or action is related to the Harrower class.</p>"
+          },
+          "dire": {
+            "label": "Dire",
+            "description": "<p>Dire actions require danger as a catalyst, and are only effective in Encounter Mode where the threads of fate become less certain and more susceptible to your manipulation.</p>"
+          },
+          "cardplay": {
+            "label": "Cardplay",
+            "description": "<p>Cardplay actions draw power from a Harrow Card and invoke its legend upon reality. You can perform only one Cardplay action per round.</p>"
+          }
         },
-        {
-            "name": "harrower-class-and-features",
-            "label": "Harrower Class and Features",
-            "system": "pf2e",
-            "path": "packs/harrower-class-and-features.db",
-            "entity": "Item",
-            "module": "pf2e-darth-and-drow"
+        "spellTraits": {
+          "harrower": {
+            "label": "Harrower",
+            "description": "<p>This feat, spell or action is related to the Harrower class.</p>"
+          },
+          "cardplay": {
+            "label": "Cardplay",
+            "description": "<p>Cardplay actions draw power from a Harrow Card and invoke its legend upon reality. You can perform only one Cardplay action per round.</p>"
+          }
         },
-        {
-            "name": "harrower-macros",
-            "label": "Harrower Macros",
-            "system": "pf2e",
-            "path": "packs/harrower-macros.db",
-            "entity": "Macro",
-            "module": "pf2e-darth-and-drow"
+        "weaponTraits": {
+          "spell-foci": "Spell Foci"
+        },
+        "weaponGroups": {
+          "spell-foci": "Spell Foci"
+        },
+        "baseWeapons": {
+          "spell-foci": "Spell Foci"
+        },
+        "equipmentTraits": {
+          "spell-foci": {
+            "label": "Spell Foci",
+            "description": "<p>A spell Foci is a special held item which enhances your Spellcasting.</p>"
+          }
         }
-    ],
-	"flags": {
-		"pf2e-darth-and-drow": {
-			"pf2e-homebrew": {
-				"featTraits": {
-					"harrower": {
-						"label":"Harrower",
-						"description":"<p>This feat, spell or action is related to the Harrower class.</p>"
-					},
-					"dire": {
-						"label":"Dire",
-						"description":"<p>Dire actions require danger as a catalyst, and are only effective in Encounter Mode where the threads of fate become less certain and more susceptible to your manipulation.</p>"
-					},
-					"cardplay": {
-						"label":"Cardplay",
-						"description":"<p>Cardplay actions draw power from a Harrow Card and invoke its legend upon reality. You can perform only one Cardplay action per round.</p>"
-					}
-				  },
-				  "spellTraits": {
-					"harrower": {
-						"label":"Harrower",
-						"description":"<p>This feat, spell or action is related to the Harrower class.</p>"
-					},
-					"cardplay": {
-						"label":"Cardplay",
-						"description":"<p>Cardplay actions draw power from a Harrow Card and invoke its legend upon reality. You can perform only one Cardplay action per round.</p>"
-					}
-				  },
-				  "weaponTraits":{
-					  "spell-foci":"Spell Foci"
-				  },
-				  "weaponGroups":{
-					  "spell-foci":"Spell Foci"
-				  },
-				  "baseWeapons":{
-					  "spell-foci":"Spell Foci"
-				  },
-				  "equipmentTraits": {
-					"spell-foci": {
-					  "label": "Spell Foci",
-					  "description": "<p>A spell Foci is a special held item which enhances your Spellcasting.</p>"
-					}
-				  }
-			}
-		}
-	},
-	"url": "https://www.patreon.com/user?u=70815503",
-	"manifest": "https://raw.githubusercontent.com/yoshisman8/pf2e_darth_and_drow/main/module.json",
-	"download": "https://github.com/yoshisman8/pf2e_darth_and_drow/archive/refs/heads/main.zip"
+      }
+    }
+  },
+  "url": "https://www.patreon.com/user?u=70815503",
+  "manifest": "https://raw.githubusercontent.com/yoshisman8/pf2e_darth_and_drow/main/module.json",
+  "download": "https://github.com/yoshisman8/pf2e_darth_and_drow/archive/refs/heads/main.zip",
+  "id": "pf2e-darth-and-drow",
+  "authors": [
+    {
+      "name": "Vyklade",
+      "flags": {}
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  },
+  "compatibility": {
+    "minimum": "9",
+    "verified": "9"
+  }
 }
