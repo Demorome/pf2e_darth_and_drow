@@ -1,7 +1,7 @@
 {
   "title": "PF2E - Darth & Drow's Brewery",
   "description": "<p>A collection of Homebrew Classes, Feats, Mechanics and Tweaks for Pathfinder 2nd edition</p><p></p><p>Support us on <a href=\"https://www.patreon.com/user?u=70815503\">Patreon</a> or <a href=\"https://ko-fi.com/helpfuldrow\">Kofi</a>.</p><p></p>",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "packs": [
     {
       "name": "harrower-actions-and-spells",
@@ -87,16 +87,18 @@
     }
   ],
   "relationships": {
-    "systems": [
-      {
-        "id": "pf2e",
-        "type": "system",
-        "compatibility": {}
-      }
-    ]
-  },
+        "systems": [
+            {
+                "id": "pf2e",
+                "type": "system",
+                "compatibility": {
+                    "minimum": "4.6.8"
+                }
+            }
+        ]
+    },
   "compatibility": {
-    "minimum": "9",
-    "verified": "9"
+    "minimum": "10",
+    "verified": "10"
   }
 }
