@@ -29,6 +29,24 @@
       "type": "Macro",
       "private": false,
       "flags": {}
+    },
+    {
+      "name": "darth-drow-improved-combat-cantrips",
+      "label": "Improved Combat Cantrips (Darth & Drow)",
+      "system": "pf2e",
+      "path": "packs/darth-drow-improved-combat-cantrips.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "darth-drow-improved-combat-cantrips-effects",
+      "label": "Improved Combat Cantrips (Spell Effects)",
+      "system": "pf2e",
+      "path": "packs/darth-drow-improved-combat-cantrips-effects.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
     }
   ],
   "flags": {
@@ -56,7 +74,9 @@
           "cardplay": {
             "label": "Cardplay",
             "description": "<p>Cardplay actions draw power from a Harrow Card and invoke its legend upon reality. You can perform only one Cardplay action per round.</p>"
-          }
+          },
+		"true-neutral": "True Neutral",
+		"neutral": "Neutral"
         },
         "weaponTraits": {
           "spell-foci": "Spell Foci"
